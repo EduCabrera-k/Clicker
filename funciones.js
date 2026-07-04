@@ -8,7 +8,7 @@ const btnmusica = document.querySelector('#btnmusica');
 let audioNoti = new Audio('noti.m4a');
 let audioReproducido = false;
 
-btnmusica.addEventListener('click' , () =>{
+btnmusica.addEventListener('click' , () => {
 
     if(audio.paused){
         audio.play();
