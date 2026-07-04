@@ -1,0 +1,92 @@
+body{
+    background-color:mediumpurple;
+}
+
+h1{
+    color:white;
+    text-align:center;
+
+}
+h3{
+position: fixed;
+    right:718px;
+    top: 500px;
+    color:white;
+}
+#Dark{
+    border-radius: 8px;
+    background-color:mediumpurple;
+    height:30px;
+    padding:5px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#btnmusica{
+    border-radius: 8px;
+    background-color:mediumpurple;
+    height:30px;
+    padding:5px;
+    position: fixed;
+    right: 65px;
+    top: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+
+#Clicker{
+    border-radius: 50%;
+    height:275px;
+    width:275px;
+    position: fixed;
+    right:625px;
+    top: 200px;
+    background-image: url('maria.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    color:white;
+}
+
+#contador{
+    position: fixed;
+    right:670px;
+    top: 500px;
+    color:white;
+}
+
+.notiOculta{
+    text-align: center;
+    display: none;
+}
+
+.notishow{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 80px;
+    background-color: gray;
+    position: fixed;
+    right: 100px;
+    top: 20px;
+    color: white;
+}
+
+.modooscuro{
+    background-color:darkslategray;
+}
+
+.modooscuro #Dark{
+    background-color:darkslategray;
+    
+}
+
+.modooscuro #btnmusica{
+    background-color:darkslategray;
+}
