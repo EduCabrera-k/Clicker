@@ -13,13 +13,26 @@ position: fixed;
     top: 500px;
     color:white;
 }
+
+#login{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin:100px auto;
+    background-color: gray;
+}
+
 #Dark{
     border-radius: 8px;
     background-color:mediumpurple;
     height:30px;
     padding:5px;
     position: fixed;
-    right: 20px;
+    right: 65px;
     top: 20px;
     cursor: pointer;
     border: 2px solid white;
@@ -31,10 +44,23 @@ position: fixed;
     height:30px;
     padding:5px;
     position: fixed;
-    right: 65px;
+    right: 100px;
     top: 20px;
     cursor: pointer;
     border: 2px solid white;
+}
+
+#exit{
+    border-radius: 8px;
+    background-color:crimson;
+    height:30px;
+    padding:5px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    border: 2px solid white;
+    color:white;
 }
 
 

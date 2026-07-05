@@ -5,8 +5,10 @@ const audio = document.querySelector('#audio');
 const noti = document.querySelector('.notiOculta');
 const notiaudio = document.querySelector('#audionoti');
 const btnmusica = document.querySelector('#btnmusica');
+const salir = document.querySelector('#exit');
 let audioNoti = new Audio('noti.m4a');
 let audioReproducido = false;
+
 
 btnmusica.addEventListener('click' , () => {
 
@@ -29,6 +31,12 @@ boton.addEventListener('click', () =>{
     }
 
 })
+
+salir.addEventListener('click', (e) =>{
+    e.preventDefault();
+    window.location.href= 'index.html';
+})
+
 
 click.addEventListener('click', () =>{
     // Reproducir audio en el primer click

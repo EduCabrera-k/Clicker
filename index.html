@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clicker</title>
-    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://jquery.com"></script>
-    <script src="https://cloudflare.com"></script>
-</head>
+    </head>
 
 <body>
-    <audio id="audio" src="pou.mp3" autoplay loop></audio>
-    <audio id="audionoti" src="noti.m4a" autoplay loop></audio>
-    <div class="notiOculta"></div>
     <h1>Clicker Game</h1>
-    <button id="btnmusica">🔇</button>
     <button Id="Dark">🌙</button>
-    <button id="Clicker"></button>
-    <h3>Contador: </h3>  <h3 id="contador"> 0</h3>
+    <div id="login">
+    <h1>Iniciar Sesion</h1>
+    <form id="formulario">
+        <label id="usuario">Usuario:</label>
+        <input type="text" id="usu">
+        <br><br>
+        <label id="Contraseña">Contraseña:</label>
+        <input type="password" id="contra">
+        <br><br>
+        <button type = "submit" id="btniniciar">Iniciar Sesion</button>
+    </form>
 
-    <script src="funciones.js"></script>
+
+    </div>
+
+    <script src="funcionesindex.js"></script>
 </body>
 </html>
