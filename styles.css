@@ -9,7 +9,7 @@ h1{
 }
 h3{
 position: fixed;
-    right:718px;
+    right:725px;
     top: 500px;
     color:white;
 }
@@ -99,7 +99,7 @@ position: fixed;
     height: 80px;
     background-color: gray;
     position: fixed;
-    right: 100px;
+    right: 130px;
     top: 20px;
     color: white;
 }
