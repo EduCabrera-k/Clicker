@@ -6,7 +6,7 @@ const Cuerpo = document.body;
 
 if(entrar){
 
-    
+
 entrar.addEventListener('click', (e) => {
     e.preventDefault();
 
