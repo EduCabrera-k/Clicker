@@ -10,13 +10,31 @@
 <body>
     <audio id="audio" src="pou.mp3" autoplay loop></audio>
     <div class="notiOculta"></div>
-    <h1>Clicker Game</h1>
-    
-    <button id="btnmusica">🔇</button>
-    <button Id="Dark">🌙</button>
-    <button id="exit">Salir</button>
-    <button id="Clicker"></button>
-    <h3>Contador: </h3>  <h3 id="contador"> 0</h3>
+    <main id="app">
+        <h1>Clicker Game</h1>
+        <div id="topbar">
+            <button id="Logros">Logros</button>
+            <button id="btnmusica">🔇</button>
+            <button id="Dark">🌙</button>
+            <button id="exit">Salir</button>
+
+            <div id="ContadorGalletas">
+            <p1>🍪</p1>
+            <p1 id="CantidadGalletas"> 0</p1>
+            </div>
+
+        </div>
+        <button id="Clicker"></button>
+        <div id="contadorWrap">
+            <h3>Contador:</h3>
+            <h3 id="contador">0</h3>
+        </div>
+        <div id="tienda">
+            <h1>Tienda</h1><br>
+            <p1>Costo: 10 🍪</p1>
+            <button id="puntocinco" <span title="Tus clicks van de 2 en 2"></span>+2</button>
+        </div>
+    </main>
 
     <script src="funciones.js"></script>
 </body>

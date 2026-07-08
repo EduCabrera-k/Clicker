@@ -4,17 +4,6 @@ const usuario = document.querySelector('#usu');
 const contra = document.querySelector('#contra');
 const Cuerpo = document.body;
 
-boton.addEventListener('click', () =>{
-    Cuerpo.classList.toggle('modooscuro');
-
-    if(Cuerpo.classList.contains('modooscuro')){
-        boton.innerText = '☀️';
-    } else {
-        boton.innerText = '🌙'
-    }
-
-})
-
 if(entrar){
 
     

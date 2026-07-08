@@ -1,88 +1,159 @@
 body{
-    background-color:mediumpurple;
+    background-color: mediumpurple;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px 16px 24px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#app{
+    width: min(100%, 780px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
 }
 
 h1{
-    color:white;
-    text-align:center;
-
+    color: white;
+    text-align: center;
+    margin: 0;
 }
+
 h3{
-position: fixed;
-    right:725px;
-    top: 500px;
-    color:white;
+    color: white;
+    margin: 0;
+}
+
+#topbar{
+    width: min(100%, 580px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 4px;
 }
 
 #login{
     text-align: center;
-    margin-top: 100px;
     color: white;
     border: 2px solid white;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
-    margin:100px auto;
+    width: min(350px, 100%);
+    margin: 150px auto;
     background-color: gray;
 }
 
-#Dark{
-    border-radius: 8px;
-    background-color:mediumpurple;
-    height:30px;
-    padding:5px;
-    position: fixed;
-    right: 65px;
-    top: 20px;
-    cursor: pointer;
+#puntocinco{
+    color: white;
     border: 2px solid white;
+    border-radius: 8px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    
 }
 
-#btnmusica{
+button:active{
+    opacity: 0.8;
+}
+
+#ContadorGalletas{
+    display: flex;
+    width: 60px;
+    height: 35px;
     border-radius: 8px;
-    background-color:mediumpurple;
-    height:30px;
-    padding:5px;
-    position: fixed;
-    right: 100px;
-    top: 20px;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 15px auto;
+    
+}
+
+#Logros,
+#Dark,
+#btnmusica,
+#exit,
+#regresar
+
+{
+    border-radius: 8px;
+    height: 40px;
+    padding: 10px 16px;
     cursor: pointer;
     border: 2px solid white;
+    color: white;
+    position: static;
+    margin: 15px auto;
+}
+
+#logrosButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#logrosButtons button{
+    margin: 0;
+}
+
+#Logros{
+    background-color: darksalmon;
+}
+
+#Dark,
+#btnmusica,
+#regresar,
+#puntocinco{
+    background-color: mediumpurple;
 }
 
 #exit{
-    border-radius: 8px;
-    background-color:crimson;
-    height:30px;
-    padding:5px;
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-    border: 2px solid white;
-    color:white;
+    background-color: crimson;
 }
-
 
 #Clicker{
     border-radius: 50%;
-    height:275px;
-    width:275px;
-    position: fixed;
-    right:625px;
-    top: 200px;
+    height: min(275px, 60vw);
+    width: min(275px, 60vw);
+    max-width: 275px;
+    max-height: 275px;
     background-image: url('maria.jpg');
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    color:white;
+    color: white;
+    border: none;
+    margin: 10px 0 16px;
+}
+
+#contadorWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 4px;
 }
 
 #contador{
-    position: fixed;
-    right:670px;
-    top: 500px;
-    color:white;
+    color: white;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+#logs{
+    color: white;
+    font-size: 20px;
 }
 
 .notiOculta {
@@ -95,24 +166,61 @@ position: fixed;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    height: 80px;
+    width: min(220px, calc(100vw - 32px));
+    min-height: 80px;
     background-color: gray;
     position: fixed;
-    right: 130px;
+    left: 50%;
     top: 20px;
+    transform: translateX(-50%);
     color: white;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000;
 }
 
 .modooscuro{
-    background-color:darkslategray;
+    background-color: darkslategray;
 }
 
-.modooscuro #Dark{
-    background-color:darkslategray;
-    
+.modooscuro #Dark,
+.modooscuro #btnmusica,
+.modooscuro #regresar,
+.modooscuro #puntocinco{
+    background-color: darkslategray;
 }
 
-.modooscuro #btnmusica{
-    background-color:darkslategray;
+.modooscuro #Logros{
+    background-color: gold;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 24px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    #topbar {
+        width: 100%;
+        gap: 8px;
+    }
+
+    #Logros,
+    #Dark,
+    #btnmusica,
+    #exit,
+    #regresar {
+        height: 38px;
+        font-size: 0.95rem;
+    }
+
+    #Clicker {
+        height: min(220px, 70vw);
+        width: min(220px, 70vw);
+    }
 }
