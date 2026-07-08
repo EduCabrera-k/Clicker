@@ -19,3 +19,9 @@ entrar.addEventListener('click', (e) => {
     }
 });
     }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker Registrado con éxito'))
+        .catch(err => console.log('Error al registrar Service Worker', err));
+}    

@@ -1,0 +1,16 @@
+{
+  "short_name": "CookieClick",
+  "name": "Cookie Clicker",
+  "icons": [
+    {
+      "src": "maria.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#9370DB",
+  "theme_color": "#9370DB",
+  "display": "standalone",
+  "orientation": "portrait"
+}
